@@ -8,7 +8,7 @@ const DisplayMovie = (props) => {
     if (searchedMovie !== null) {
       return (
         <div>
-        <h3>MOVIE DISPLAY</h3>
+        <h3 style={{color: "green"}}>MOVIE DISPLAY</h3>
         <h4>{searchedMovie.Title}</h4>
         <p>{searchedMovie.Plot}</p>
       {/* check if posterURL exists */}

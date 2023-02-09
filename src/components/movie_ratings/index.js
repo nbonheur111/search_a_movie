@@ -27,7 +27,7 @@ const MovieRatings = (props) => {
     }
   return (
     <div>
-        <h1>Movie Ratings</h1>
+        <h1 style={{color: "green"}}>Movie Ratings</h1>
         {searchedMovie === null ? returnLoader() : returnMovieRatings()}
     </div>
   )

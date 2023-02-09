@@ -17,7 +17,7 @@ const Search = (props) => {
         if (isFirstRender.current === true) {
             console.log("making api call");
             isFirstRender.current = false;
-            makeServerCall("Pacific Rim")
+            makeServerCall("Star wars")
         }
     }, []);
     // listen for submit and make call to server
@@ -55,7 +55,7 @@ const Search = (props) => {
     <section style={{borderBottom: "4px solid black", marginBottom: "20px", paddingBottom: "12px"}}>
         <h3>Search</h3>
         <form onSubmit={(event) => handleSubmit(event)}>
-            <label htmlFor="movie-search">Type the name of the movie you want to see!</label>
+            <label style={{fontWeight: "bold"}} htmlFor="movie-search">Which movie are you looking for?</label>
             <input 
                 type="search" 
                 name="movie-search" 
@@ -63,7 +63,7 @@ const Search = (props) => {
                 placeholder="movie name" 
                 onChange={(event) => handleChange(event)}
             />
-            <button type="">click me!</button>
+            <button style={{color: "green"}} type="">Search</button>
         </form>
     </section>
   )
